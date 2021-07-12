@@ -1,0 +1,35 @@
+<MyGridLayout>
+
+	firstname:firstname
+	lastname:lastname
+	email:email
+
+	GridLayout:
+		cols:1
+		size: root.width, root.height
+		GridLayout:
+			cols:2
+
+			Label:
+				text: “FirstName”
+			TextInput:
+				id: firstname
+				multiline:False
+
+
+			Label:
+				text: “LastName”
+			TextInput:
+				id: lastname
+				multiline:False
+
+			Label:
+				text: “Email”
+			TextInput:
+				id: email
+				multiline:False
+
+	Button:
+		text: “Next”
+		font_size: 32
+		on_press: root.press()
